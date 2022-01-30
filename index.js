@@ -1,5 +1,5 @@
 // const config = require('config')
-// require('dotenv').config()
+require('dotenv').config()
 const express = require('express')
 const itemRouter = require('./routes/item.routes')
 // const cors = require('cors')
@@ -10,6 +10,7 @@ const PORT = process.env.PORT || 8080
 const app = express()
 
 app.use(express.json())
+app.use(express.static('static'))
 // app.use(cors())
 app.use('/api', itemRouter)
 
