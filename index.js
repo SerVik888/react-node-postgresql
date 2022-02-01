@@ -1,5 +1,5 @@
 // const config = require('config')
-require('dotenv').config()
+// require('dotenv').config()
 const express = require('express')
 const itemRouter = require('./routes/item.routes')
 // const cors = require('cors')
